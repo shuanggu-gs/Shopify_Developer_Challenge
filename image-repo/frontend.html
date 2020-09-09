@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script lanague="javescript" type="text/javascript" src="frontend.js"></script>
+    </head>
+    <link rel="stylesheet" type="text/css" href="frontend.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body>
+        <div class="header-photo">
+          <div class="article">
+            <div class="title">A Simple Image Repository</div>
+            <div class="subtitle">Shopify Developer Challenge<br><span>@Shonna</span></div>
+          </div>
+        </div>
+        <div>
+            <form class="inner-form" method="POST" enctype="multipart/form-data" action= "/upload" id="form">
+                <div class="input-field first-wrap">
+                    <input id="search" type="text" placeholder="Search..." name="tag" />
+                </div>
+                <div class="input-field second-wrap">
+                    <input type="file" id="image" name="image">
+                </div>
+                <div class="input-field third-wrap">
+                    <button class="btn-search" type="button" onclick="sumbit_form();">Search</i></button>
+                </div>
+            </form>
+<!--            <form class="example" method="POST" enctype="multipart/form-data" action= "/upload" >-->
+<!--                <div><input type="text" placeholder="Search..." name="tag"></div>-->
+<!--                <div>-->
+<!--                    <input type="file" id="image" name="image">-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <button type="button" onclick="sumbit_form();"><i class="fa fa-search"></i></button>-->
+<!--                </div>-->
+<!--            </form>-->
+        </div>
+        <div id="maintext" align="center">
+
+        </div>
+        <div id="barcon"  class="barcon" align="center">
+
+        </div>
+    </body>
+</html>

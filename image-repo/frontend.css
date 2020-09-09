@@ -1,0 +1,220 @@
+.header-photo{
+  width:100%;
+  height: 50%;
+  position: relative;
+  text-align: center;
+  background:url("https://images.pexels.com/photos/194096/pexels-photo-194096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: 50% 0%;
+}
+.header-photo:after{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: rgba(21,21,21,.6);
+}
+
+.article{
+  position: absolute;
+  bottom: 120px;
+  z-index:2;
+  color: white;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.title{
+  font-size: 80px;
+  font-weight: 700;
+  position:relative;
+  color: white;
+}
+.subtitle{
+  font-weight: 300;
+  font-size: 22px;
+  padding-top: 10px;
+  color: rgba(255,255,255,.6);
+}
+
+
+.inner-form {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px 47px;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.inner-form .input-field {
+  margin-right: 30px;
+  height: 68px;
+}
+
+.inner-form .input-field input {
+  height: 100%;
+  background: #fff;
+  border-radius: .5px;
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 10px 32px;
+  font-size: 20px;
+}
+
+.inner-form .input-field input.placeholder {
+  color: #9a9a9a;
+  font-size: 20px;
+}
+
+.inner-form .input-field input:-moz-placeholder {
+  color: #9a9a9a;
+  font-size: 20px;
+}
+
+.inner-form .input-field input::-webkit-input-placeholder {
+  color: #9a9a9a;
+  font-size: 20px;
+}
+
+.inner-form .input-field input:hover, .inner-form .input-field input:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.inner-form .input-field.first-wrap {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.inner-form .input-field.second-wrap {
+  width: 32.77%;
+  min-width: 180px;
+}
+
+.inner-form .input-field.third-wrap {
+  width: 180px;
+  margin-right: 0;
+}
+
+.inner-form .input-field.third-wrap .btn-search {
+  height: 100%;
+  width: 100%;
+  background: #4272d7;
+  white-space: nowrap;
+  border-radius: .5px;
+  font-size: 20px;
+  color: #fff;
+  transition: all .2s ease-out, color .2s ease-out;
+  border: 0;
+  cursor: pointer;
+}
+
+.inner-form .input-field.third-wrap .btn-search:hover {
+  background: #2d62d3;
+}
+
+@media screen and (max-width: 992px) {
+  legend {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .inner-form {
+    padding: 30px 35px;
+  }
+  .inner-form .input-field {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  legend {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .inner-form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .inner-form .input-field {
+    margin-right: 0;
+  }
+  .inner-form .input-field input {
+    padding: 5px 15px;
+    font-size: 16px;
+  }
+  .inner-form .input-field.first-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .inner-form .input-field.second-wrap {
+    width: calc(50% - 10px);
+    min-width: auto;
+  }
+  .inner-form .input-field.third-wrap {
+    width: calc(50% - 10px);
+  }
+  .inner-form .input-field.third-wrap .btn-search {
+    font-size: 16px;
+  }
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.table {
+    align: center;
+}
+
+.grid_image {
+    width: 250;
+    height: 300;
+}
+
+.barcon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.barcon button {
+    background-color: #9a9a9a;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+
+    border-radius: 2px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.barcon button:hover {
+  background-color: #9a9a9a;
+  color: white
+ }
